@@ -27,7 +27,7 @@ export default function Newsletter() {
           completo, pulsa en el botón para ponerte en contacto con nosotros.
         </p>
       </div>
-      <div className="newsletter-button">
+      <div className="newsletter-button mb-3">
         <a href="/contacto" className="btn btn-outline-light">Contáctame aquí</a>
       </div>
       <footer className="newsletter-footer">
