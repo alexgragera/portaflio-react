@@ -1,23 +1,40 @@
 import React from "react";
 import './navigation.css';
-import { Nav, Navbar, Container } from "react-bootstrap";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navigation() {
   return (
-    <Navbar bg="black" className="Navbar" variant="dark" expand="lg">
-      <Container>
-        <Navbar.Brand href="/">Mi Portafolio</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-auto">
-            <Link to="/" className="nav-item">Inicio</Link>
-            <Link to="/proyectos" className="nav-item">Proyectos</Link>
-            <Link to="/contacto" className="nav-item">Contacto</Link>
-            <Link to="/newsletter" className="nav-item">Newsletter</Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-black">
+      <div className="container">
+        <Link className="navbar-brand" to="/">Mi Portafolio</Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav mx-auto">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">Inicio</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/proyectos">Proyectos</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/contacto">Contacto</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/newsletter">Newsletter</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 }
