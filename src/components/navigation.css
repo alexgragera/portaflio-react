@@ -1,0 +1,12 @@
+.nav-item {
+    color: white !important;
+  }
+  
+  .nav-item:hover {
+    background-color: rgb(30, 30, 30) !important;
+    color: white !important;
+  }
+
+  .Navbar{
+    border-bottom: 2px solid white;
+  }

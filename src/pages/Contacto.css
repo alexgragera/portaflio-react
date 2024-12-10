@@ -1,0 +1,41 @@
+body {
+            
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+
+input::placeholder, 
+textarea::placeholder {
+  color: white !important;
+}
+.contact-form {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.contact-form:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+.form-control:focus {
+  border-color: #c8c8c8;
+  box-shadow: 0 0 5px rgba(108, 117, 125, 0.5);
+  transition: all 0.3s ease;
+}
+.btn {
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  background-color: black;
+}
+
+.alert-success {
+  margin-top: 20px;
+  display: none;
+}

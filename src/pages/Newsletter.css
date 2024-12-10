@@ -1,0 +1,96 @@
+.newsletter-container {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid white;
+  max-width: 40%;
+  margin: 0 auto;
+}
+
+.newsletter-header {
+  background-color: #000;
+  color: white;
+  padding: 5px 5px;
+}
+
+.newsletter-header h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.newsletter-header h2 {
+  font-size: 16px;
+}
+
+.newsletter-header h3 {
+  color: red;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.newsletter-image img {
+  max-width: 100%;
+  height: auto;
+  margin: 5px 0;
+}
+
+.newsletter-body {
+  background-color: #000;
+  color: white;
+  padding: 5px;
+  margin: 5px auto;
+  border-radius: 10px;
+  width: 60%;
+  max-width: 500px;
+}
+
+.newsletter-body h3 {
+  color: red;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.newsletter-button a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Footer */
+.newsletter-footer {
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.unsubscribe-text {
+  margin-top: 5px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.newsletter-footer .social-media a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.newsletter-footer .social-media a:hover {
+  text-decoration: underline;
+}
+
+.newsletter-footer a {
+  text-decoration: none;
+}
+
+.newsletter-footer a:hover {
+  text-decoration: underline;
+}
