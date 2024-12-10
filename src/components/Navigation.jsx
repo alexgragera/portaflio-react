@@ -1,6 +1,7 @@
 import React from "react";
 import './navigation.css';
 import { Nav, Navbar, Container } from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 export default function Navigation() {
   return (
@@ -10,10 +11,10 @@ export default function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
-            <Nav.Link href="/" className="nav-item">Inicio</Nav.Link>
-            <Nav.Link href="/proyectos" className="nav-item">Proyectos</Nav.Link>
-            <Nav.Link href="/contacto" className="nav-item">Contacto</Nav.Link>
-            <Nav.Link href="/newsletter" className="nav-item">Newsletter</Nav.Link>
+            <Link to="/" className="nav-item">Inicio</Link>
+            <Link to="/proyectos" className="nav-item">Proyectos</Link>
+            <Link to="/contacto" className="nav-item">Contacto</Link>
+            <Link to="/newsletter" className="nav-item">Newsletter</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
